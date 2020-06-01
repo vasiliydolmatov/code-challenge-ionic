@@ -1,10 +1,10 @@
 .tab-bar {
 	font-size: 18px;
-	height: 4.1em;
+	height: 3em;
 }
 
 .tab-button {
-	font-size: 1em;
+	font-size: .8em;
 	--color-selected: #F0AE43;
 	
 	&__icon {
@@ -18,20 +18,20 @@
 	}
 }
 
-@media (min-width: 768px) {
-	.login {
+@media (max-width: 768px) {
+	.tab-bar {
 		font-size: 12px;
 	}
 }
 
-@media (min-width: 992px) {
-	.login {
+@media (max-width: 992px) {
+	.tab-bar {
 		font-size: 14px;
 	}
 }
 
-@media (min-width: 1200px) {
-	.login {
+@media (max-width: 1200px) {
+	.tab-bar {
 		font-size: 18px;
 	}
 }

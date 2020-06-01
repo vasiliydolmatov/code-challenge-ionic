@@ -31,7 +31,7 @@ const Login: React.FC<{ onLogin: Function }> = (props)=> {
 					<IonInput className="login-form__input" placeholder="Enter Your Password" />
 				</div>
 				<div className="login-form-item">
-					<IonButton size="large" onClick={onClickLogin} expand="block">Login</IonButton>
+					<div className="login-form__submit" onClick={onClickLogin}>Login</div>
 				</div>
 			</div>
 		</IonPage>

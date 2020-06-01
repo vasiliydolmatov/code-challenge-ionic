@@ -9,27 +9,29 @@
 	&-header {
 		display: flex;
 		flex-direction: column;
-		flex-basis: 60%;
-		justify-content: space-evenly;
+		flex-basis: 57.5%;
 
 		&__brand {
 			text-align: center;
 			font-size: 56px;
 			color: #3C445D;
+			margin-top: .8em;
 		}
 
 		&__title {
 			text-align: center;
-			font-size: 7em;
+			font-size: 4.6em;
 			color: #F0AE43;
+			margin-top: .7em;
 		}
 		
 		&__desc {
-			padding: 0 1.2em;
+			padding: 0 1.7em;
 			text-align: center;
 			font-style: italic;
-			font-size: 3em;
+			font-size: 2.5em;
 			color: #3C445D;
+			margin-top: .9em;
 		} 
 		
 		&-greets {
@@ -41,28 +43,43 @@
 	&-form {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-evenly;
-		flex-basis: 40%;
+		justify-content: space-between;
+		flex-basis: 42.5%;
 		background-color: #FFFFFF;
-		padding: 1em 1.6em;
+		padding: 2.3em 1.6em .8em 2em;
+		box-sizing: border-box;
 		
 		&-item {
-			padding: 1em 0;	
+			padding: .9em 0;	
 		}
 		
 		&__label {
-			font-size: 1em;
+			font-size: 1.1em;
 			font-weight: bold;
 		}
 		
 		&__input {
-			--padding-top: 1.1em ;
+			--padding-top: .9em ;
 			--padding-end: .6em;
-			--padding-bottom: 1.1em ;
+			--padding-bottom: .9em ;
 			--padding-start: .6em ;
+			font-size: 1.2em;
+			margin-top: .2em;
 			background-color: #EBECEF;
 			border: none;
 			border-radius: 3px;
+		}
+		
+		&__submit {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 2.8em;
+			background-color: #53A4D8;
+			color: #FFFFFF;
+			font-size: 1.1em;
+			border: none;
+			border-radius: 10px;
 		}
 	}
 }
@@ -73,19 +90,19 @@
 	}
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
 	.login {
 		font-size: 12px;
 	}
 }
 
-@media (min-width: 992px) {
+@media (max-width: 992px) {
 	.login {
 		font-size: 14px;
 	}
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
 	.login {
 		font-size: 18px;
 	}
