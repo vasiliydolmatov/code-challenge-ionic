@@ -39,8 +39,10 @@ const App: React.FC = () => {
 	};
 	
 	const logout = useCallback((message: string) => {
-		setTextToast(message);
-		setShowToast(true);
+		if (message) {
+			setTextToast(message);
+			setShowToast(true);
+		}
 		setIsAuthorized(false)
 	}, []);
 	

@@ -25,6 +25,18 @@ import axios from 'axios';
 import Menu from '../../Menu';
 import './style.scss'
 
+interface ActionItem {
+	icon: string
+}
+
+const actionItems: ActionItem[] = [
+	{ icon: chatbubbles },
+	{	icon: calculator },
+	{ icon: document },
+	{ icon: folderOpen },
+	{	icon: phonePortrait }
+];
+
 interface User {
 	firstname: string,
 	lastname: string,
@@ -57,7 +69,7 @@ const Home: React.FC<{ onLogout: Function }> = ({ onLogout }) => {
 					 <IonMenuButton />
 				 </IonButtons>
 				 <IonButtons slot="primary">
-				   <IonButton>
+				   <IonButton onClick={() => onLogout('')}>
 					   <IonIcon icon={settings} />
 				   </IonButton>
 				 </IonButtons>
@@ -78,21 +90,11 @@ const Home: React.FC<{ onLogout: Function }> = ({ onLogout }) => {
 					<img alt={user.firstname} className="home-content-header__photo" src={user.avatar_url} />
 				</div>
 				<div className="home-actions">
-					<div className="home-actions__icon">
-						<IonIcon icon={chatbubbles} />
-					</div>
-					<div className="home-actions__icon">
-						<IonIcon icon={calculator} />
-					</div>
-					<div className="home-actions__icon">
-						<IonIcon icon={document} />
-					</div>
-					<div className="home-actions__icon">
-						<IonIcon icon={folderOpen} />
-					</div>
-					<div className="home-actions__icon">
-						<IonIcon icon={phonePortrait} />
-					</div>
+					{actionItems.map((action, index) => (
+						<div key={index} className="home-actions__icon">
+							<IonIcon icon={action.icon} />
+						</div>
+					))}
 				</div>
 				<div className="home-suggestions">
 					<div className="home-suggestions-item">
