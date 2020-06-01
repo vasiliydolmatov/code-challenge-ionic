@@ -1,0 +1,148 @@
+.home {
+	font-size: 18px;
+	
+	&-header {
+		&-toolbar {
+			--background: #F0AE43;
+			color: #FFFFFF;
+		}
+	}
+	
+	&-content {
+		display: flex;
+		flex-direction: column;
+		align-content: space-between;
+		--background: #E5E5E5;
+	
+		&-header {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			background-color: #F0AE43;
+			border-bottom-left-radius: 11em;
+			border-bottom-right-radius: 11em;
+			color: #FFFFFF;
+			margin: 0 -5em;
+
+			&__fullname {
+				font-size: 2em;
+				transform: translateY(1.7em);
+			}
+		
+			&__code {
+				font-size: 1em;
+				transform: translateY(4.2em);
+			}
+		
+			&__photo {
+				width: 12em;
+				height: 12em;
+				border-radius: 100%;
+				border: 15px solid #EFCF95;
+				transform: translateY(50%);
+				background-color: #8B8F9D;
+			}
+		}
+	}
+	
+	&-actions {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		font-size: 2em;
+		color: #8B8F9D;
+		margin-top: 1em;
+		height: 9em;
+
+		&__icon {
+			border-radius: 5.5em;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		
+		&__icon:nth-child(4n+1) {
+			width: 1.7em;
+			height: 1.7em;
+			background-color: #EBECEF;
+			transform: translateY(0px);
+		}
+		
+		&__icon:nth-child(2) {
+			width: 2em;
+			height: 2em;
+			background-color: #EBECEF;
+			transform: translateY(2.6em) translateX(-50%);
+			font-size: 1.2em;
+		}
+		
+		&__icon:nth-child(3) {
+			font-size: 2em;
+			width: 2em;
+			height: 2em;
+			background-color: #EBECEF;
+			transform: translateY(2em);
+		}
+		
+		&__icon:nth-child(4) {
+			width: 2em;
+			height: 2em;
+			background-color: #EBECEF;
+			transform: translateY(2.6em) translateX(50%);
+			font-size: 1.3em;
+		}
+	}
+	
+	&-suggestions {
+		margin: 2.6em;
+		color: #A1A4AF;
+
+		&-item {
+			display: flex;
+			flex-direction: column;
+			padding: 1em;
+			background-color: #FFFFFF;
+			border-radius: 5px;
+			
+			&__title {
+				font-size: 1.3em;
+				font-style: italic;
+			}
+			
+			&__icon {
+				margin: .2em 0;
+				font-size: 8em;
+				align-self: center;
+			}
+			
+			&__label {
+				text-align: center;
+				font-size: 1.8em;
+			}
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.home {
+		font-size: 12px;
+	}
+}
+
+@media (min-width: 768px) {
+	.login {
+		font-size: 12px;
+	}
+}
+
+@media (min-width: 992px) {
+	.login {
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.login {
+		font-size: 18px;
+	}
+}

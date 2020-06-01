@@ -1,0 +1,92 @@
+.login {
+	display: flex;
+	flex-direction: column;
+	background-color: #E5E5E5;
+	height: 100%;
+	padding: 0;
+	font-size: 18px;
+	
+	&-header {
+		display: flex;
+		flex-direction: column;
+		flex-basis: 60%;
+		justify-content: space-evenly;
+
+		&__brand {
+			text-align: center;
+			font-size: 56px;
+			color: #3C445D;
+		}
+
+		&__title {
+			text-align: center;
+			font-size: 7em;
+			color: #F0AE43;
+		}
+		
+		&__desc {
+			padding: 0 1.2em;
+			text-align: center;
+			font-style: italic;
+			font-size: 3em;
+			color: #3C445D;
+		} 
+		
+		&-greets {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+	
+	&-form {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		flex-basis: 40%;
+		background-color: #FFFFFF;
+		padding: 1em 1.6em;
+		
+		&-item {
+			padding: 1em 0;	
+		}
+		
+		&__label {
+			font-size: 1em;
+			font-weight: bold;
+		}
+		
+		&__input {
+			--padding-top: 1.1em ;
+			--padding-end: .6em;
+			--padding-bottom: 1.1em ;
+			--padding-start: .6em ;
+			background-color: #EBECEF;
+			border: none;
+			border-radius: 3px;
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.login {
+		font-size: 10px;
+	}
+}
+
+@media (min-width: 768px) {
+	.login {
+		font-size: 12px;
+	}
+}
+
+@media (min-width: 992px) {
+	.login {
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.login {
+		font-size: 18px;
+	}
+}

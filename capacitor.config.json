@@ -1,0 +1,14 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "ionic-test-task",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "build",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {},
+  "linuxAndroidStudioPath": "/home/user/Desktop/android-studio/bin/studio.sh"
+}

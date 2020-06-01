@@ -1,0 +1,50 @@
+.sidebar {
+	font-size: 18px;
+	--background: #E5E5E5;
+	
+	&-header {
+		&__title {
+			justify-content: center;
+			text-align: center;
+		}
+	}
+	
+	&-content {
+		--background: #E5E5E5;
+		
+		&-list {
+			padding: 0;
+			
+			&-item {
+				
+				&__label {
+					padding: 0 .5em;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.sidebar {
+		font-size: 10px;
+	}
+}
+
+@media (min-width: 768px) {
+	.login {
+		font-size: 12px;
+	}
+}
+
+@media (min-width: 992px) {
+	.login {
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.login {
+		font-size: 18px;
+	}
+}
